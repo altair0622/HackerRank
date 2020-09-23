@@ -22,5 +22,5 @@ group by con.contest_id, con.hacker_id, con.name
 having sum(sum_total_submissions)!=0 or 
         sum(sum_total_accepted_submissions)!=0 or
         sum(sum_total_views)!=0 or
-        sum(sum_total_unique_views)!=0 --Excluding the result if all four sums are 0
+        sum(sum_total_unique_views)!=0 
 order by contest_id
